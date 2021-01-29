@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.main {
+    text-align: left;
+    background: lightskyblue;
+    height: 300px;
+    font-size: 24px;
+}
+
+.aside2 {
+    background: hotpink;
+}
+
+@media all and (min-width: 800px){
+    .main{
+       flex: 3;
+    }
+    
+    .aside2{
+        order:2;
+    }
+
+    .main{
+        order:1;
+    }
+
+}
+
+@media all and (min-width: 600px){
+    .aside{
+        flex: 1;
+    }
+}
+
