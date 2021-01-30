@@ -61,6 +61,7 @@ ul.a {
 img {
     width: 200px;
     float: right;
+    padding: 12px;
 }
    
 @media all and (min-width: 800px){
